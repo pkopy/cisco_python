@@ -37,7 +37,7 @@ def EnterMove(board):
             userSquare = int(input('Enter your move:'))
             row = int((userSquare-1)//3)
             column = (userSquare-1)-int(((userSquare-1)//3)*3)
-#             print(row, column)
+            print(row, column)
             if (row, column) not in lst:
                 continue
             else:
@@ -69,8 +69,10 @@ def VictoryFor(board, sign):
 # the function analyzes the board status in order to check if 
 # the player using 'O's or 'X's has won the game
 #
-    if board[0][0] == board[0][1] == board[0][2]:
-        print(sing,' win')
+    if board[0][0] == board[0][1] == board[0][2] or \
+    board[1][0] == board[1][1] == board[1][2] or \
+    board[2][0] == board[2][1]==board[2][2]:
+        print(sign,' win')
 
 def DrawMove(board):
 #
