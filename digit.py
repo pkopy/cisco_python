@@ -4,7 +4,7 @@ def simulate(number: str):
     for char in number:
         if char.isdigit():
             list.append(int(char))
-        print(char)
+#         print(char)
     listOfDigits = [['###','# #', '# #', '# #','###'],['#','#','#', '#', '#'],['###','  #', '###', '#  ', '###'],['###','  #', '###', '  #', '###'],
     ['# #','# #', '###', '  #', '  #'], ['###','#  ', '###', '  #', '###'], ['###','#  ', '###', '# #', '###'], ['###','  #', '  #', '  #', '  #'],
     ['###','# #', '###', '# #', '###'], ['###','# #', '###', '  #', '###']
@@ -14,6 +14,6 @@ def simulate(number: str):
         for item in list:
             print(listOfDigits[item][elem], end = ' ')
         print()
-    print(list)
+#     print(list)
 
-simulate('0123456789')
+simulate('12888')
